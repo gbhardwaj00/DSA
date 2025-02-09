@@ -29,5 +29,10 @@ int main()
 
     // the next statement prints a garbage value, i > size of array,also does not give an error
     printf("%d\n", arr[10]);
+
+    // assigning a value to 10th elm after array start and checking if it gives an error
+    arr[10] = 10;
+    printf("%d\n", arr[10]);
+    
     return 0;
 }
