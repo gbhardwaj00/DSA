@@ -31,6 +31,7 @@ int main()
         string suit;
     };
 
+    // this gets declared on stack
     struct Card c1;
     c1.face = "Ace";
     c1.suit = "Spades";
