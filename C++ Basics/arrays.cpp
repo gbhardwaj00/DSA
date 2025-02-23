@@ -19,6 +19,7 @@ int main()
     }
 
     // print all elements of array
+    // if 'arr' was dynamically declared, this for loop would not work as we compiler would not know the size of 'arr'
     for (int x : arr)
     {
         cout << x << endl;
@@ -33,6 +34,8 @@ int main()
     // assigning a value to 10th elm after array start and check if it prints correct value
     arr[10] = 10;
     printf("%d\n", arr[10]);
+
+    cout << "Address of array is " << arr << endl;
 
     return 0;
 }
