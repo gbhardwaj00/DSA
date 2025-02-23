@@ -7,6 +7,7 @@ using namespace std;
 void printArray(int A[], int size)
 {
     // array passed as argument is modifiable
+    // A[0] = 10 will change the value of the original array
     for (int i = 0; i < 5; i++)
     {
         cout << A[i] << endl;
@@ -18,6 +19,7 @@ void printArray(int A[], int size)
 // int [] and int * mean the same thing for arrays
 int *create_array(int size)
 {
+    // array created on heap dynamically
     int *A = (int *)malloc(size * sizeof(int));
     for (int i = 0; i < size; i++)
     {
