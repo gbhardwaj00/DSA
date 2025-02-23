@@ -15,10 +15,10 @@ int main()
     // prints the value of x
     printf("Value of x: %d\n", x);
 
-    // prints the value of x using pointer
+    // prints the value of x using pointer dereference operator
     printf("Value of x: %d\n", *p);
 
-    // prints the address of x - uses dereference operator to get the value of p
+    // prints the address of x
     printf("Address of x: %p\n", p);
 
     // Example to show heap usage
