@@ -20,7 +20,7 @@ void printArray(int A[], int size)
 int *create_array(int size)
 {
     // array created on heap dynamically
-    int *A = (int *)malloc(size * sizeof(int));
+    int *A = new int[5];
     for (int i = 0; i < size; i++)
     {
         A[i] = i;
@@ -42,6 +42,6 @@ int main()
 
     printArray(returned_array, array_size);
 
-    free(returned_array);
+    delete[] returned_array;
     return 0;
 }
