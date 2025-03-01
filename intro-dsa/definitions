@@ -1,0 +1,11 @@
+1. What is a Data Structure?
+   A data structure is a way of organizing and storing data in RAM (main memory) while a program is running. It helps the program access and modify data efficiently. Note: Data structures exist only in memory during execution, not on a hard drive.
+
+2. What is a Database?
+   A database is a system for storing and managing data on secondary storage (HDDs or SSDs). Most companies use relational databases (RDBMS) to store structured data that can be easily retrieved, updated, and managed.
+
+3. What is a Data Warehouse?
+   A data warehouse is a large storage system for historical (old) and operational data. It keeps old data separate but accessible when needed for analysis and reporting. Companies use data mining to find useful patterns in this stored data.
+
+4. What is Big Data?
+   Big Data refers to handling huge amounts of data, often generated from the internet, social media, and sensors. It deals with large size (volume), fast processing (velocity), and different types (variety) of data. Special tools like Hadoop and Spark help manage and analyze big data efficiently.
