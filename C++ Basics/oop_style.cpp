@@ -22,15 +22,14 @@ public:
 
     // facilitaotr functions
     // getter(accessor) and setter(mutator) functions
-    int setLength(int l);
 
-    int setBreadth(int b);
+    void setBreadth(int b);
 
     int getLength();
 
     int getBreadth();
 
-    // destructor
+    // destructor, used for clearing up dynamic memory
     ~Rectangle();
 
     int area();
@@ -67,12 +66,12 @@ int Rectangle::getBreadth()
     return breadth;
 }
 
-int Rectangle::setLength(int l)
+void Rectangle::setLength(int l)
 {
     length = l;
 }
 
-int Rectangle::setBreadth(int b)
+void Rectangle::setBreadth(int b)
 {
     breadth = b;
 }
