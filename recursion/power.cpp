@@ -26,7 +26,7 @@ int optimizedPower(int a, int b)
         return optimizedPower(a * a, b / 2);
     }
     else
-        return a * optimizedPower(a * a, (b - 1) / 2);
+         return a * optimizedPower(a * a, (b - 1) / 2);
 }
 
 int main()

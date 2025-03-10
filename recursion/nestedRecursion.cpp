@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// Time: O(1), for n <= 100, the number of calls grow only up to a certain level(try entering 1, that is the max), and for n > 100, it is O(1) again
+// Space : O(1), same reasoning 
 int fun(int n)
 {
     if (n > 100)
@@ -14,7 +16,7 @@ int fun(int n)
 int main()
 {
     int r;
-    r = fun(95);
+    r = fun(91);
     cout << r << endl;
     return 0;
 }

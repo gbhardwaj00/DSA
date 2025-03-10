@@ -29,7 +29,6 @@ int main()
     // this is C++ method of dynamic allocation
     // struct Rectangle *q;
     // q = new Rectangle;
-
     q->length = 15;
     q->breadth = 7;
     printf("Length: %d\n", q->length);

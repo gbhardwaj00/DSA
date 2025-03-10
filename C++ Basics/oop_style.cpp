@@ -25,6 +25,8 @@ public:
 
     void setBreadth(int b);
 
+    void setLength(int b);
+
     int getLength();
 
     int getBreadth();

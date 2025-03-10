@@ -30,10 +30,10 @@ int main()
     int a = 5;
     // prints 15
     cout << nonStaticFunction(a) << endl;
-    // prints 25 because it is head recursion and x becomes 5 in the most inner call
+    // prints 25 because it is head recursion and x becomes 5 in the most innermost call and gets done first in head recursion
     cout << staticFunction(a) << endl;
 
-    // this prints 50 because the value of 'x' becomes 10 in the most inner call
+    // this prints 50 because the value of 'x' becomes 10 in the most inner call after it is changed by the previous time we called the function above
     cout << staticFunction(a) << endl;
 
     return 0;
