@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// Time : O(n)
 int fact(int n)
 {
     if (n <= 1)
@@ -16,8 +17,7 @@ int combinations(int n, int r)
     return fact(n) / (fact(r) * fact(n - r));
 }
 
-
-// Time: 
+// Time: O(2^n)
 int combPascals(int n, int r)
 {
     if (r == 0 || (n == r))
@@ -31,7 +31,5 @@ int combPascals(int n, int r)
 int main()
 {
     cout << combinations(5, 2) << endl;
-
     cout << combPascals(5, 2) << endl;
-    return 0;
 }
