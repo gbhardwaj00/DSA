@@ -1,0 +1,22 @@
+General Recursive function
+
+
+fun1(int n) {
+    if (n > 0) {
+        // This part of function runs during calling time
+        // Therefore, any code here runs before the function calls itself
+        fun (n - 1);
+        // This part of code executes at returning time
+        // Therefore this code runs after the recursive call this function made is finished and the control has come back to this function instance again
+    }
+}
+
+NOTE:
+
+When `fun1` is called with a positive integer `n`, it first checks if `n` is greater than 0. If this condition is true, the function executes the code within the `if` block. The first part of the code inside the `if` block, before the recursive call, runs during the "calling time." This means that any operations or statements placed here will execute before the function calls itself recursively.
+
+The recursive call `fun1(n - 1)` then occurs, which means the function calls itself with the argument `n` decremented by 1. This process continues, creating a series of nested function calls, each with a progressively smaller value of `n`, until `n` is no longer greater than 0.
+
+After the recursive call completes, control returns to the previous instance of the function. The second part of the code inside the `if` block, which is placed after the recursive call, executes at "returning time." This means that any operations or statements here will run after the recursive call has finished and control has returned to the current function instance.
+
+In summary, the function `fun1` demonstrates a typical recursive structure where actions can be performed both before and after the recursive call, allowing for complex operations to be built up and then unwound as the recursion resolves.
