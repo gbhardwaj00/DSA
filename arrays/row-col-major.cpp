@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+    // m * n = 3 * 4
     int B[3][4] = {
         {1, 2, 3, 1},
         {4, 5, 6, 4},
@@ -14,6 +15,7 @@ int main()
     // Address(B[1][2])=1000+(1×4+2)×4 = =1000+(4+2)×4=1000+24=1024
 
     // Column major: [col1 col2 col3 col4] contiguously
+    // Address(B[i][j])=BA+(j×m+i)×size of one element
     // Address(B[1][2]) = 1000+(2*3+1)*4 = 1028
 
     // As seen, memory addresses are different for these two orienatations, this is because of how data is arranged in memory
