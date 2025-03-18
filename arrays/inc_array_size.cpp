@@ -22,12 +22,12 @@ int main()
     }
 
     // first delete the unused memory
-    delete[] p;
+    free(p);
 
     // p stores address stored by q now
     p = q;
 
-    // the first elements will print the same as the array that p was pointing to earlier
+    // the first elements will print the same as the array that p was pointing to earlier because we copied those values in q and now p points there
     for (int i = 0; i < 10; i++)
     {
         cout << p[i] << " ";
@@ -35,6 +35,10 @@ int main()
 
     // q is pointing to null/nothing now
     q = nullptr;
+
+    delete[] p;
+
+    p = nullptr;
 
     return 0;
 }

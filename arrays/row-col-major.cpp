@@ -14,6 +14,12 @@ int main()
     // Address(B[i][j])=BA+(i×n+j)×size of one element
     // Address(B[1][2])=1000+(1×4+2)×4 = =1000+(4+2)×4=1000+24=1024
 
+    // Value can be calculated as below, sizeof not required as compilers does that automatically
+    // The (int *) flattens the 3D array into 1D array of int values
+    // * is a dereference operator to get the value in the index location
+    int b12 = *((int *)B + (1 * 4 + 2));
+    cout << b12 << " ";
+
     // Column major: [col1 col2 col3 col4] contiguously
     // Address(B[i][j])=BA+(j×m+i)×size of one element
     // Address(B[1][2]) = 1000+(2*3+1)*4 = 1028

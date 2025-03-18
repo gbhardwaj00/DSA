@@ -20,8 +20,9 @@ int main()
     A[1][2][3] = 3;
 
     // testing row major as C++ uses that for default
-    // (int *) flattens the 3D array into 1D array of int values
-    // * is a dereference operator
+    // The (int *) flattens the 3D array into 1D array of int values
+    // Then we get the index value with the computation A + (1 * 4 * 4 + 2 * 4 + 3)
+    // * is a dereference operator to get the value in the index location
     cout << *((int *)A + (1 * 4 * 4 + 2 * 4 + 3)) << endl;
     return 0;
 }

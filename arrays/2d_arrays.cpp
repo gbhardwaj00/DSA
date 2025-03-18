@@ -17,7 +17,7 @@ int main()
     B[0] = new int[4];
     B[1] = new int[4];
     B[2] = new int[4];
-
+    // setting value
     B[1][2] = 15;
 
     // Third Way
