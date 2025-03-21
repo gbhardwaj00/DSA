@@ -1,1 +1,8 @@
-cout << endl;
+
+    // unionSortedArray();
+
+    // intersectionUnsortedArray();
+    // intersectionSortedArray();
+
+    // diffUnsortedArray();
+    // diffSortedArray();
